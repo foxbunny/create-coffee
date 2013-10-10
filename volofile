@@ -1,0 +1,39 @@
+/*jslint node: true */
+'use strict';
+
+module.exports = {
+  clean: {
+    run: 'v.rm www-build'
+  },
+  compile: {
+    run: 'n.coffee -cbo www/js coffee'
+  },
+  ccompile: {
+    run: 'compass compile'
+  },
+  watch: {
+    run: 'n.coffee -cbwo www/js coffee'
+  },
+  cwatch: {   
+    run: 'compass watch'
+  },
+  serve: {
+    run: function(d, v, namedArgs, conf) {
+      d.resolve(v.spawn(
+        'node',
+        ['tools/proxy.js', (conf || 'tools/proxy.json')]
+      ));
+    }  
+  },
+  build: {
+    flags: {
+      'q': 'quiet'
+    },
+    depends: ['clean', 'compile', 'ccompile'],
+    run: function (d, v, namedArgs) {
+      d.resolve(v.spawn('node', ['tools/r.js', '-o', 'tools/build.js'], {
+        useConsole: !namedArgs.quiet
+      }));
+    }
+  }
+};

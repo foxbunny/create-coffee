@@ -1,0 +1,1 @@
+rqeuirejs ['app/main']

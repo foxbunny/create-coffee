@@ -1,0 +1,7 @@
+{
+  "baseDir": "www",
+  "target": "http://concordia.cloudhorizon.com/em/api",
+  "rootPath": "api",
+  "port": "8080",
+  "noLang": true
+}

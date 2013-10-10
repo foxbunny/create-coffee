@@ -1,0 +1,12 @@
+{
+  "name": "",
+  "version": "0.0.1",
+  "amd": {},
+  "devDependencies": {
+    "daproxy": "*",
+    "coffee-script": "1.6.3"
+  },
+  "volo": {
+    "baseUrl": "www/js/lib"
+  }
+}
