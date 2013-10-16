@@ -1,4 +1,4 @@
-# ## Application configuration
+# # Application configuration
 #
 # This module configures RequireJS and loads the main module. At build-time,
 # this module will contain all the dependencies including the main module.
