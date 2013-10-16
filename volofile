@@ -18,12 +18,7 @@ module.exports = {
     run: 'compass watch'
   },
   serve: {
-    run: function(d, v, namedArgs, conf) {
-      d.resolve(v.spawn(
-        'node',
-        ['tools/proxy.js', (conf || 'tools/proxy.json')]
-      ));
-    }  
+    run: 'n.proxy tools/proxy.json'
   },
   build: {
     flags: {
