@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "amd": {},
   "devDependencies": {
-    "daproxy": "*",
-    "coffee-script": "1.6.3"
+    "coffee-script": "1.6.3",
+    "cdoc": "*"
   },
   "volo": {
     "baseUrl": "www/js/lib"
