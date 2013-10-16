@@ -16,7 +16,7 @@ This web project has the following setup:
 * tools/ - the build tools to optimize the project.
     * build.js - build configuration
     * proxy.json - development server configuration
-* config.rb - Compass configuration
+    * compass.rb - Compass configuration
 
 ## Before you start
 
