@@ -9,13 +9,13 @@ module.exports = {
     run: 'n.coffee -cbo www/js coffee'
   },
   ccompile: {
-    run: 'compass compile'
+    run: 'compass compile --config tools/compass.rb'
   },
   watch: {
     run: 'n.coffee -cbwo www/js coffee'
   },
   cwatch: {   
-    run: 'compass watch'
+    run: 'compass watch --config tools/compass.rb'
   },
   serve: {
     run: 'n.proxy tools/proxy.json'
