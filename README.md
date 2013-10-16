@@ -14,6 +14,8 @@ This web project has the following setup:
         * lib/ - the directory to hold third party scripts.
     * css/ - the directory to hold compiled CSS
 * tools/ - the build tools to optimize the project.
+    * build.js - build configuration
+    * proxy.json - development server configuration
 * config.rb - Compass configuration
 
 ## Before you start
@@ -38,10 +40,6 @@ add](https://github.com/volojs/volo/blob/master/commands/add/doc.md) command.
 To start the server run:
 
     volo serve
-
-To start the server with custom configuration:
-
-    volo serve path/to/config.json
 
 ## Building the project
 
