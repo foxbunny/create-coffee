@@ -4,7 +4,8 @@
   "amd": {},
   "devDependencies": {
     "coffee-script": "1.6.3",
-    "cdoc": "*"
+    "cdoc": "*",
+    "daproxy": "*"
   },
   "volo": {
     "baseUrl": "www/js/lib"
